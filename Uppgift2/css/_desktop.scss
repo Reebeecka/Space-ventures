@@ -1,0 +1,19 @@
+
+    .page2{
+        display: flex;
+        column-gap: 100px;
+        P{font-size: 14px;}
+    }
+
+    
+    .left, .right{
+        width: 50%;
+    }
+    
+    blockquote{
+        display:block;
+    }
+    .right{
+    position: relative;
+    top:0px;
+    }

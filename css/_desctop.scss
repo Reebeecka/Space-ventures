@@ -1,0 +1,161 @@
+
+    .page2{
+        display: flex;
+        column-gap: 120px;
+        P{font-size: 14px;}
+    }
+    
+    .left, .right{
+        width: 50%;
+    }
+
+    .page1{
+        header{
+            img{
+            }
+            .headerbox{
+                width: 240px;
+                height: 240px;
+                position: relative;
+                left:10%;
+                background-color: rgba(255, 255, 255, 0.5);
+                h1{
+                    position: relative;
+                    top:-10%;
+                    font-size: 60px;
+                }
+                a{
+                    top:0px;
+                    left:155px;
+                    font-size: 14px;
+                    .arrow{
+                        right:-17px;
+                        width:14px;
+                        transition: ease 1s;
+                    }
+                    &:hover{
+                        .arrow{
+                            transform:translateX(5px);
+                        }
+                    }
+                }
+            }
+            .arrowdown{
+                transition:ease 1s;
+            }
+            .arrowdown:hover{
+                bottom: 0;
+            }
+        }
+    }
+
+        .page2{
+            background-image: url("../img/bg2.jpeg");
+            padding-bottom: 100px;
+            .left{
+                padding-left: 40px;
+                div{
+                    h2{   
+                        .space{
+                            font-size: 100px;
+                        }
+                        .ventures{
+                            letter-spacing: 0.0em;
+                            font-size: 130px;
+                            top:80px;
+                            right:-5px;
+                        }
+                    }   
+                }
+                article{
+                    top:140px;
+                    h3{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 25px;
+                        text-align:justify;
+                    }
+                    blockquote{
+                        q{
+                            font-size: 20px;
+                            line-height: 25px;
+                        }
+                    }
+                }  
+            }   
+            .right{
+                top:0px;
+                .quote{
+                    position: relative;
+                    top:20px;
+                    display: block;
+                    font-size: 48px;
+                    font-style: italic;
+                    font-family: $basefont;
+                    background: -webkit-radial-gradient($color1,$pink);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    opacity: 0.5;
+                }
+                p{
+                    font-size: 16px;
+                    position: relative;
+                    top: 10px;
+                    text-align: justify;
+                    padding-right: 40px;
+                    .test{
+                        display: none;
+                    }
+                    .tom{
+                        width: 17%;
+                        display:block;
+                        float:right;
+                        padding-left:10px;
+                        padding-top:5px;
+                        transform: rotate(9deg);
+                    }
+                    .read{
+                        .arrowpink{
+                            transition: ease 1s;
+                            width:16px;
+                        }
+                        &:hover{
+                            .arrowpink{
+                                transform:translateX(8px);
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+
+        footer{
+            p{
+                font-size: 14px;
+            }
+        }
+        .menu{
+            .move{
+
+            }
+        }
+        .menu:hover{
+            .move{
+                right:0px;
+            }
+        }
+        .menu.menu-open nav{
+            ul {
+                li{
+                    margin:10%;
+                }
+                li:hover{
+                    text-decoration: underline;
+                    text-decoration-color:$pink;
+                }
+            }
+        }
+        

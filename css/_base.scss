@@ -1,0 +1,232 @@
+
+$font2: 'Times New Roman';
+$color1: #fff;
+$color2: #000;
+$pink: #fc00a2;
+$basefont: 'Rubik', sans-serif;
+
+    body {
+        width: 100%;
+        margin: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+h1, h2, h3, h4, h5, h6, p, q{
+    font-family: $basefont;
+    color: $color1;
+}
+
+.page1{
+    header{
+        background-image: url("../img/bg.jpeg");
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+        z-index: 1;
+        .headerbox{
+            position: absolute;
+            top:5%;
+            left:15%;
+            outline: 4px solid black;
+            width: 110px;
+            height: 170px;
+            padding-left:25px;
+            padding-right:25px;
+            padding-top: 2px;
+            padding-bottom: 10px;
+            h1{
+                text-transform: uppercase;
+                color:$color2;
+                text-align: center;
+                font-weight: 700;
+                font-size: 35px;
+            }
+            a{
+                text-decoration: none;
+                position: relative;
+                top:-5px;
+                left:-20px;
+                font-size: 10px;
+                color:$color2;
+                text-align: left;
+                .arrow{
+                    position: absolute;
+                    right:-15px;
+                    top:1px;
+                    width:12px;
+                }
+            }
+        }
+        .arrowdown{
+            position: absolute;
+            right:50%;
+            bottom: 10px;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+}
+
+.page2{
+    background-image: url("../img/bg2min.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    .left{
+        position: relative;
+        padding:20px;
+        div{
+            h2{   
+                .space{
+                color:$color1;
+                font-size: 50px;
+                font-weight: 700;
+                z-index: 3;
+                }
+                .ventures{
+                letter-spacing: 0.03em;
+                font-size: 60px;
+                font-family: $font2;
+                position:absolute;
+                top:15%;
+                left:60px;
+                z-index: 2;
+                color: rgba($color: #fff, $alpha: 0.5);
+                }
+            }   
+        }
+        article{
+            position: relative;
+            top: 15px;
+            h3{
+                font-weight: 700;
+            }
+            p{
+                font-size: 12px;
+            }
+            blockquote{
+                padding: 10px;
+                q{
+                    font-style: italic;
+
+                }
+            }
+        }  
+    }   
+    .right{
+        padding:20px;
+        position: relative;
+        top:-50px;
+        .quote{
+            display: none;
+        }
+        p{
+            .test{
+                display: block;
+            }
+            .tom{
+                display:none;
+            }
+            font-size: 12px;
+            .read{
+                text-decoration: underline;
+                color:$pink;
+                cursor: pointer;
+                .arrowpink{
+                    width:12px;
+                    padding-left: 2px;
+                }
+            }
+        }
+    }
+
+}
+footer{
+        position: fixed;
+        bottom:0;
+        width: 100%;
+        height: 55px;
+        background: #03061f;
+        z-index: 1;
+        p{
+            color:$pink;
+            font-size: 12px;
+            width: 72%;
+            padding-left:20px;
+            text-shadow:7px 7px 7px $pink;
+        }
+        button{
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            padding:5px;
+            font-family: $basefont;
+            background-color: #07115f;
+            border: none;
+            font-size: 16px;
+            color: #FFFFFF;
+            text-align: center;
+            text-transform: uppercase;
+            overflow: hidden;
+            cursor: pointer;
+          }
+    }
+/*innan man trycker*/
+#menu-button{
+    position: fixed;
+    top: 10px;
+    right: 10px;   
+    z-index: 2;
+}
+.menu {
+    div{
+        cursor: pointer;
+        div{
+            position: relative;
+            width: 30px;
+            height: 10px;
+            background-color: rgb(133, 133, 133);
+            border-radius: 50px;
+            margin-bottom: 5px;
+        }
+        .move{
+            right:5px;
+            transition: 0.5s ease;
+        }
+    }
+}
+
+.menu nav {
+    display: none;
+}
+
+/*när man tryckt*/
+.menu.menu-open nav{
+    width: 100vw;
+    height: 100vh;            
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba($color: #fff, $alpha: 0.8); 
+    display: block;
+    ul {
+        position: relative;
+        font-family: $basefont;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-shadow: 2px 2px #999999;
+        font-size: 40px;
+        text-align: center;
+        list-style-type: none;
+        li{
+            margin:25%;
+        }
+    }
+}
+
